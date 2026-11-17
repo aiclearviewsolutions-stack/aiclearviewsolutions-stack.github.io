@@ -60,6 +60,7 @@
       font-size: 0.95rem;
       line-height: 1.25;
       letter-spacing: 0.01em;
+      min-width: 0;
     }
     .brand:hover { color: #fff; }
     .brand span { display: block; font-weight: 600; font-size: 0.72rem; letter-spacing: 0.04em; opacity: 0.85; }
@@ -152,6 +153,7 @@
     section {
       padding: 2.15rem 0;
       border-bottom: 1px solid var(--line);
+      scroll-margin-top: 5rem;
     }
     h2 {
       margin: 0 0 1rem;
@@ -242,34 +244,21 @@
     }
     .legal p { color: #2c352f; }
     footer {
-      padding: 1.6rem 0 5.5rem;
+      padding: 1.6rem 0 2.4rem;
       color: var(--muted);
       font-size: 0.92rem;
     }
     footer p { margin: 0 0 0.4rem; }
     footer a { color: inherit; }
-    .mobile-callbar {
-      display: none;
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 30;
-      padding: 0.65rem 0.85rem calc(0.65rem + env(safe-area-inset-bottom));
-      background: var(--paper);
-      border-top: 1px solid var(--line);
-    }
-    .mobile-callbar a { width: 100%; }
     @media (max-width: 640px) {
-      .mobile-callbar { display: block; }
-      header .brand { max-width: 58%; }
+      .brand { font-size: 0.88rem; }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <a class="brand" href="#top">Clearview Solutions LLC<span>Central Florida</span></a>
+      <a class="brand" href="#top">Clearview Solutions<span>LLC · Central Florida</span></a>
       <a class="header-call" href="tel:+14079006323">Call (407) 900-6323</a>
     </div>
   </header>
@@ -388,10 +377,6 @@
       <p>A Florida limited liability company.</p>
     </div>
   </footer>
-
-  <div class="mobile-callbar">
-    <a class="btn btn-primary" href="tel:+14079006323">Call (407) 900-6323</a>
-  </div>
 
   <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
   <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-263204670984058']", "https://form.jotform.com/");</script>
